@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal|center"
-    tools:context="org.scci_cu.conferencetool.LoginActivity">
+    tools:context="org.scci_cu.conferencetool.LoginActivity"
+    android:background="@color/grey"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/logo_scci"
@@ -16,10 +18,11 @@
 
     <android.support.design.widget.TextInputLayout
         android:hint="UserName"
+        android:textColorHint="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/usr_scci"
+            android:id="@+id/usr_txt"
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -30,10 +33,12 @@
     <android.support.design.widget.TextInputLayout
         app:passwordToggleEnabled="true"
         android:hint="Password"
+        android:textColorHint="@color/black"
         android:layout_width="match_parent"
+        app:passwordToggleTint="@color/black"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/pass_scci"
+            android:id="@+id/pass_txt"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -48,7 +53,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:text="Login"
-        android:id="@+id/bttn_scci"
+        android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
    </LinearLayout>
