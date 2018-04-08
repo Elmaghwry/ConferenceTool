@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Conference Tool</string>
+    <string name="baseurl">http://192.168.1.23/app/retrofit/</string>
 </resources>
